@@ -2,7 +2,7 @@ import React from 'react';
 
 const NavBar = () => {
     return (
-        <nav className="bg-blue-500 p-4">
+        <nav className="bg-teal-950 p-4">
             <div className="container mx-auto flex justify-between items-center">
                 <div className="text-white text-lg font-bold">Expense Tracker</div>
                 <ul className="flex space-x-4">
