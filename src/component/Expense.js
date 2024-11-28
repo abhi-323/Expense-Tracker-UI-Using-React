@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Expense = (props) => {
-    console.log("prop",props);
     
     const handleDelete = (id) => {
         console.log(`Delete item with id: ${id}`);
@@ -19,14 +18,8 @@ const Expense = (props) => {
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
-            return response.text(); // Use response.text() if the server sends plain text
-        })
-        .then(data => {
-            console.log("Success:", data);
-            props.onDelete(id); // Update UI after successful deletion
-        })
-        .catch(error => {
-            console.error("Error:", error);
+            props.onDelete(id);
+            return response.text(); 
         });
     };
     
