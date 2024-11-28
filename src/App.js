@@ -67,7 +67,7 @@ function App() {
           onClick={() => handleAddExpense()} >
           ADD
         </button>
-        <h2 className="text-xl font-bold mt-2">Total Amount: ${totalAmount}</h2> {/* Display total amount */}
+        <h2 className="text-xl font-bold mt-2">Total Amount: ₹ <span className="text-green-600">{totalAmount}</span></h2> {/* Display total amount */}
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-6">
         {expense.map((e) => (
