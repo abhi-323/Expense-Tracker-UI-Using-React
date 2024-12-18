@@ -9,7 +9,7 @@ function App() {
   const [totalAmount, setTotalAmount] = useState(0);
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/v1/expense")
+    fetch("https://localhost:8443/api/v1/expense")
       .then((response) => response.json())
       .then((data) => {
         setExpense(data);
@@ -29,7 +29,7 @@ function App() {
   };
 
   const handleAddExpense = (newExpenseData) => {
-    fetch("http://localhost:8080/api/v1/expense", {
+    fetch("https://localhost:8443/api/v1/expense", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
