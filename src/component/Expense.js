@@ -5,7 +5,7 @@ const Expense = (props) => {
     const handleDelete = (id) => {
         console.log(`Delete item with id: ${id}`);
         
-        fetch("https://localhost:8443/api/v1/expensedeletebyid", {
+        fetch("http://13.61.141.250:8080/api/v1/expensedeletebyid", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
