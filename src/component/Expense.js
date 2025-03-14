@@ -30,7 +30,7 @@ const Expense = (props) => {
                 <h2 className="text-xl font-bold">{props.title}</h2>
             </div>
             <div className="text-black">
-                <b>ID:</b> {props.id} <br />
+                {/* <b>ID:</b> {props.id} <br /> */}
                 <b>Amount:</b> ₹{props.amount} <br />
                 <b>Category:</b> {props.category} <br />
             </div>
